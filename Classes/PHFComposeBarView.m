@@ -5,7 +5,7 @@
 #import "PHFComposeBarView_Button.h"
 
 
-CGFloat const PHFComposeBarViewInitialHeight = 44.0f;
+CGFloat const PHFComposeBarViewInitialHeight = 50.0f;
 
 
 NSString *const PHFComposeBarViewDidChangeFrameNotification  = @"PHFComposeBarViewDidChangeFrame";
@@ -18,24 +18,25 @@ NSString *const PHFComposeBarViewAnimationCurveUserInfoKey    = @"PHFComposeBarV
 
 
 CGFloat const kHorizontalSpacing          =  8.0f;
-CGFloat const kFontSize                   = 17.0f;
-CGFloat const kTextContainerTopMargin     =  8.0f;
-CGFloat const kTextContainerBottomMargin  =  8.0f;
+CGFloat const kFontSize                   = 12.0f;
+CGFloat const kTextContainerTopMargin     =  10.0f;
+CGFloat const kTextContainerBottomMargin  =  10.0f;
 CGFloat const kTextContainerLeftPadding   =  3.0f;
 CGFloat const kTextContainerRightPadding  =  2.0f;
 CGFloat const kTextContainerTopPadding    =  4.0f;
-CGFloat const kTextContainerCornerRadius  = 5.25f;
-CGFloat const kTextViewTopMargin          = -8.0f;
+CGFloat const kTextContainerCornerRadius  = 2.0f;
+CGFloat const kTextViewTopMargin          = -5.0f;
 CGFloat const kPlaceholderHeight          = 25.0f;
 CGFloat const kPlaceholderSideMargin      =  8.0f;
 CGFloat const kPlaceholderTopMargin       =  2.0f;
-CGFloat const kButtonHeight               = 26.0f;
-CGFloat const kButtonTouchableOverlap     =  6.0f;
-CGFloat const kButtonRightMargin          = -2.0f;
-CGFloat const kButtonBottomMargin         =  8.0f;
-CGFloat const kUtilityButtonWidth         = 25.0f;
-CGFloat const kUtilityButtonHeight        = 25.0f;
-CGFloat const kUtilityButtonBottomMargin  =  9.0f;
+CGFloat const kButtonHeight               = 30.0f;
+CGFloat const kButtonTouchableOverlap     = 8.0f;
+CGFloat const kButtonWidth                = 60.0f;
+CGFloat const kButtonRightMargin          = 0.0f;
+CGFloat const kButtonBottomMargin         =  10.0f;
+CGFloat const kUtilityButtonWidth         = 0.0f;//25.0f;
+CGFloat const kUtilityButtonHeight        = 0.0f;//25.0f;
+CGFloat const kUtilityButtonBottomMargin  =  0.0f;//9.0f;
 CGFloat const kCaretYOffset               =  7.0f;
 CGFloat const kCharCountFontSize          = 11.0f;
 CGFloat const kCharCountTopMargin         = 15.0f;
@@ -262,7 +263,7 @@ static CGFloat kTextViewToSuperviewHeightDelta;
         CGRect frame = [self bounds];
         frame.size.height = 0.5f;
         _topLineView = [[UIView alloc] initWithFrame:frame];
-        [_topLineView setBackgroundColor:[UIColor colorWithWhite:0.98f alpha:1.0f]];
+        [_topLineView setBackgroundColor:[UIColor colorWithWhite:0.88f alpha:1.0f]];
         [_topLineView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     }
 
@@ -278,6 +279,7 @@ static CGFloat kTextViewToSuperviewHeightDelta;
         [_backgroundView setBarStyle:UIBarStyleDefault];
         [_backgroundView setTranslucent:YES];
         [_backgroundView setTintColor:[UIColor whiteColor]];
+        [_backgroundView setBackgroundColor:[UIColor whiteColor]];
         [_backgroundView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     }
 
@@ -288,9 +290,9 @@ static CGFloat kTextViewToSuperviewHeightDelta;
 - (UIButton *)button {
     if (!_button) {
         _button = [PHFComposeBarView_Button buttonWithType:UIButtonTypeCustom];
-        CGRect frame = CGRectMake([self bounds].size.width - kHorizontalSpacing - kButtonRightMargin - kButtonTouchableOverlap,
+        CGRect frame = CGRectMake([self bounds].size.width - kHorizontalSpacing - kButtonRightMargin - kButtonWidth,
                                   [self bounds].size.height - kButtonBottomMargin - kButtonHeight,
-                                  2 * kButtonTouchableOverlap,
+                                  kButtonWidth,
                                   kButtonHeight);
         [_button setFrame:frame];
         [_button setTitleEdgeInsets:UIEdgeInsetsMake(0.5f, 0, 0, 0)];
@@ -336,18 +338,18 @@ static CGFloat kTextViewToSuperviewHeightDelta;
     if (!_textContainer) {
         CGRect textContainerFrame = CGRectMake(kHorizontalSpacing,
                                                kTextContainerTopMargin,
-                                               [self bounds].size.width - kHorizontalSpacing * 3 - kButtonRightMargin,
+                                               [self bounds].size.width - kHorizontalSpacing * 3 - kButtonRightMargin - kButtonWidth,
                                                [self bounds].size.height - kTextContainerTopMargin - kTextContainerBottomMargin);
         _textContainer = [UIButton buttonWithType:UIButtonTypeCustom];
         [_textContainer setFrame:textContainerFrame];
         [_textContainer setClipsToBounds:YES];
-        [_textContainer setBackgroundColor:[UIColor colorWithWhite:0.98f alpha:1.0f]];
+        [_textContainer setBackgroundColor:[UIColor colorWithWhite:0.9f alpha:1.0f]];
         [_textContainer setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
 
         CALayer *layer = [_textContainer layer];
-        UIColor *borderColor = [UIColor colorWithHue:240.0f/360.0f saturation:0.02f brightness:0.8f alpha:1.0f];
-        [layer setBorderColor:[borderColor CGColor]];
-        [layer setBorderWidth:0.5f];
+        //UIColor *borderColor = [UIColor colorWithHue:240.0f/360.0f saturation:0.02f brightness:0.8f alpha:1.0f];
+        //[layer setBorderColor:[borderColor CGColor]];
+        //[layer setBorderWidth:0.5f];
         [layer setCornerRadius:kTextContainerCornerRadius];
 
         CGFloat textHeight = [self textHeight];
@@ -383,6 +385,7 @@ static CGFloat kTextViewToSuperviewHeightDelta;
         [_textView setScrollIndicatorInsets:UIEdgeInsetsMake(8.0f, 0.0f, 8.0f, 0.5f)];
         [_textView setBackgroundColor:[UIColor clearColor]];
         [_textView setFont:[UIFont systemFontOfSize:kFontSize]];
+        
         [self setupDelegateChainForTextView];
     }
 
@@ -480,7 +483,13 @@ static CGFloat kTextViewToSuperviewHeightDelta;
 
     CGFloat textHeight         = [self textHeight];
     CGFloat maxViewHeight      = [self maxHeight];
-    CGFloat previousTextHeight = [self previousTextHeight];
+    CGFloat previousTextHeight = [self textView].frame.size.height;//[self previousTextHeight];
+    
+    //NSLog(@"text height needed: %f", textHeight);
+    
+    //NSLog(@"text view height: %f", );
+    
+    //NSLog(@"max height: %f", [self textView].frame.size.height);
     CGFloat textHeightDelta    = textHeight - previousTextHeight;
 
     // NOTE: Continue even if the actual view height won't change because of max
@@ -488,6 +497,8 @@ static CGFloat kTextViewToSuperviewHeightDelta;
     //       offset when a text line is added or removed.
     if (textHeightDelta == 0.0f && [self bounds].size.height == maxViewHeight)
         return;
+    
+    //NSLog(@"height delta: %f", textHeightDelta);
 
     [self setPreviousTextHeight:textHeight];
     CGFloat newViewHeight =

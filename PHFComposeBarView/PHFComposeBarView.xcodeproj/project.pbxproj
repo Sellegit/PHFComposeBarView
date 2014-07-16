@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		30A00785194C331A001C31C2 /* UniversalLib */ = {
+		30070A4C1975EDBB0076C799 /* UniversalLib */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 30A00788194C331A001C31C2 /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildConfigurationList = 30070A4F1975EDBB0076C799 /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
 			buildPhases = (
-				30A00789194C3320001C31C2 /* Run Script */,
+				30070A501975EDC80076C799 /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -21,15 +21,31 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		30FEBFD8194C30270023985E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FEBFD7194C30270023985E /* Foundation.framework */; };
-		30FEC003194C30430023985E /* PHFComposeBarView_Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FEBFFE194C30430023985E /* PHFComposeBarView_Button.m */; };
-		30FEC004194C30430023985E /* PHFComposeBarView_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FEC000194C30430023985E /* PHFComposeBarView_TextView.m */; };
-		30FEC005194C30430023985E /* PHFComposeBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FEC002194C30430023985E /* PHFComposeBarView.m */; };
-		C91A2927AF25493A89F825FF /* libPods-PHFComposeBarView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410317A92DAC409ABECF42AD /* libPods-PHFComposeBarView.a */; };
+		3082F1F61975EAA800F60DC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3082F1F51975EAA800F60DC7 /* Foundation.framework */; };
+		3082F2041975EAA800F60DC7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3082F2031975EAA800F60DC7 /* XCTest.framework */; };
+		3082F2051975EAA800F60DC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3082F1F51975EAA800F60DC7 /* Foundation.framework */; };
+		3082F2071975EAA800F60DC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3082F2061975EAA800F60DC7 /* UIKit.framework */; };
+		3082F20A1975EAA800F60DC7 /* libPHFComposeBarView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3082F1F21975EAA800F60DC7 /* libPHFComposeBarView.a */; };
+		3082F2101975EAA800F60DC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3082F20E1975EAA800F60DC7 /* InfoPlist.strings */; };
+		3082F2121975EAA800F60DC7 /* PHFComposeBarViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3082F2111975EAA800F60DC7 /* PHFComposeBarViewTests.m */; };
+		3082F2211975EAB400F60DC7 /* PHFComposeBarView_Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 3082F21C1975EAB400F60DC7 /* PHFComposeBarView_Button.m */; };
+		3082F2221975EAB400F60DC7 /* PHFComposeBarView_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3082F21E1975EAB400F60DC7 /* PHFComposeBarView_TextView.m */; };
+		3082F2231975EAB400F60DC7 /* PHFComposeBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3082F2201975EAB400F60DC7 /* PHFComposeBarView.m */; };
+		C3036DD843244E1BBCC7F9BA /* libPods-PHFComposeBarView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BC3B00C405479981469793 /* libPods-PHFComposeBarView.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3082F2081975EAA800F60DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3082F1EA1975EAA800F60DC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3082F1F11975EAA800F60DC7;
+			remoteInfo = PHFComposeBarView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		30FEBFD2194C30270023985E /* CopyFiles */ = {
+		3082F1F01975EAA800F60DC7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -41,83 +57,116 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		30A0078A194C33F4001C31C2 /* libPods-PHFComposeBarView-PHFDelegateChain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-PHFComposeBarView-PHFDelegateChain.a"; path = "Pods/build/Debug-iphoneos/libPods-PHFComposeBarView-PHFDelegateChain.a"; sourceTree = "<group>"; };
-		30FEBFD4194C30270023985E /* libPHFComposeBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPHFComposeBarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		30FEBFD7194C30270023985E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		30FEBFDB194C30270023985E /* PHFComposeBarView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHFComposeBarView-Prefix.pch"; sourceTree = "<group>"; };
-		30FEBFE5194C30270023985E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		30FEBFE8194C30270023985E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		30FEBFFD194C30430023985E /* PHFComposeBarView_Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFComposeBarView_Button.h; path = ../../Classes/PHFComposeBarView_Button.h; sourceTree = "<group>"; };
-		30FEBFFE194C30430023985E /* PHFComposeBarView_Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFComposeBarView_Button.m; path = ../../Classes/PHFComposeBarView_Button.m; sourceTree = "<group>"; };
-		30FEBFFF194C30430023985E /* PHFComposeBarView_TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFComposeBarView_TextView.h; path = ../../Classes/PHFComposeBarView_TextView.h; sourceTree = "<group>"; };
-		30FEC000194C30430023985E /* PHFComposeBarView_TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFComposeBarView_TextView.m; path = ../../Classes/PHFComposeBarView_TextView.m; sourceTree = "<group>"; };
-		30FEC001194C30430023985E /* PHFComposeBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFComposeBarView.h; path = ../../Classes/PHFComposeBarView.h; sourceTree = "<group>"; };
-		30FEC002194C30430023985E /* PHFComposeBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFComposeBarView.m; path = ../../Classes/PHFComposeBarView.m; sourceTree = "<group>"; };
-		410317A92DAC409ABECF42AD /* libPods-PHFComposeBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHFComposeBarView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E286C2F9374740CD9A05486E /* Pods-PHFComposeBarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHFComposeBarView.xcconfig"; path = "Pods/Pods-PHFComposeBarView.xcconfig"; sourceTree = "<group>"; };
+		3082F1F21975EAA800F60DC7 /* libPHFComposeBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPHFComposeBarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3082F1F51975EAA800F60DC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3082F1F91975EAA800F60DC7 /* PHFComposeBarView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHFComposeBarView-Prefix.pch"; sourceTree = "<group>"; };
+		3082F2021975EAA800F60DC7 /* PHFComposeBarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHFComposeBarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3082F2031975EAA800F60DC7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3082F2061975EAA800F60DC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3082F20D1975EAA800F60DC7 /* PHFComposeBarViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PHFComposeBarViewTests-Info.plist"; sourceTree = "<group>"; };
+		3082F20F1975EAA800F60DC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3082F2111975EAA800F60DC7 /* PHFComposeBarViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHFComposeBarViewTests.m; sourceTree = "<group>"; };
+		3082F21B1975EAB400F60DC7 /* PHFComposeBarView_Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFComposeBarView_Button.h; path = ../../Classes/PHFComposeBarView_Button.h; sourceTree = "<group>"; };
+		3082F21C1975EAB400F60DC7 /* PHFComposeBarView_Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFComposeBarView_Button.m; path = ../../Classes/PHFComposeBarView_Button.m; sourceTree = "<group>"; };
+		3082F21D1975EAB400F60DC7 /* PHFComposeBarView_TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFComposeBarView_TextView.h; path = ../../Classes/PHFComposeBarView_TextView.h; sourceTree = "<group>"; };
+		3082F21E1975EAB400F60DC7 /* PHFComposeBarView_TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFComposeBarView_TextView.m; path = ../../Classes/PHFComposeBarView_TextView.m; sourceTree = "<group>"; };
+		3082F21F1975EAB400F60DC7 /* PHFComposeBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFComposeBarView.h; path = ../../Classes/PHFComposeBarView.h; sourceTree = "<group>"; };
+		3082F2201975EAB400F60DC7 /* PHFComposeBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFComposeBarView.m; path = ../../Classes/PHFComposeBarView.m; sourceTree = "<group>"; };
+		34646939C9C74B7E86F691E7 /* Pods-PHFComposeBarView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHFComposeBarView.xcconfig"; path = "Pods/Pods-PHFComposeBarView.xcconfig"; sourceTree = "<group>"; };
+		74BC3B00C405479981469793 /* libPods-PHFComposeBarView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHFComposeBarView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		30FEBFD1194C30270023985E /* Frameworks */ = {
+		3082F1EF1975EAA800F60DC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30FEBFD8194C30270023985E /* Foundation.framework in Frameworks */,
-				C91A2927AF25493A89F825FF /* libPods-PHFComposeBarView.a in Frameworks */,
+				3082F1F61975EAA800F60DC7 /* Foundation.framework in Frameworks */,
+				C3036DD843244E1BBCC7F9BA /* libPods-PHFComposeBarView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3082F1FF1975EAA800F60DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3082F20A1975EAA800F60DC7 /* libPHFComposeBarView.a in Frameworks */,
+				3082F2041975EAA800F60DC7 /* XCTest.framework in Frameworks */,
+				3082F2071975EAA800F60DC7 /* UIKit.framework in Frameworks */,
+				3082F2051975EAA800F60DC7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30FEBFCB194C30270023985E = {
+		3082F1E91975EAA800F60DC7 = {
 			isa = PBXGroup;
 			children = (
-				30FEBFD9194C30270023985E /* PHFComposeBarView */,
-				30FEBFD6194C30270023985E /* Frameworks */,
-				30FEBFD5194C30270023985E /* Products */,
-				E286C2F9374740CD9A05486E /* Pods-PHFComposeBarView.xcconfig */,
+				3082F1F71975EAA800F60DC7 /* PHFComposeBarView */,
+				3082F20B1975EAA800F60DC7 /* PHFComposeBarViewTests */,
+				3082F1F41975EAA800F60DC7 /* Frameworks */,
+				3082F1F31975EAA800F60DC7 /* Products */,
+				34646939C9C74B7E86F691E7 /* Pods-PHFComposeBarView.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		30FEBFD5194C30270023985E /* Products */ = {
+		3082F1F31975EAA800F60DC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30FEBFD4194C30270023985E /* libPHFComposeBarView.a */,
+				3082F1F21975EAA800F60DC7 /* libPHFComposeBarView.a */,
+				3082F2021975EAA800F60DC7 /* PHFComposeBarViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		30FEBFD6194C30270023985E /* Frameworks */ = {
+		3082F1F41975EAA800F60DC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				30A0078A194C33F4001C31C2 /* libPods-PHFComposeBarView-PHFDelegateChain.a */,
-				30FEBFD7194C30270023985E /* Foundation.framework */,
-				30FEBFE5194C30270023985E /* XCTest.framework */,
-				30FEBFE8194C30270023985E /* UIKit.framework */,
-				410317A92DAC409ABECF42AD /* libPods-PHFComposeBarView.a */,
+				3082F1F51975EAA800F60DC7 /* Foundation.framework */,
+				3082F2031975EAA800F60DC7 /* XCTest.framework */,
+				3082F2061975EAA800F60DC7 /* UIKit.framework */,
+				74BC3B00C405479981469793 /* libPods-PHFComposeBarView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		30FEBFD9194C30270023985E /* PHFComposeBarView */ = {
+		3082F1F71975EAA800F60DC7 /* PHFComposeBarView */ = {
 			isa = PBXGroup;
 			children = (
-				30FEBFFD194C30430023985E /* PHFComposeBarView_Button.h */,
-				30FEBFFE194C30430023985E /* PHFComposeBarView_Button.m */,
-				30FEBFFF194C30430023985E /* PHFComposeBarView_TextView.h */,
-				30FEC000194C30430023985E /* PHFComposeBarView_TextView.m */,
-				30FEC001194C30430023985E /* PHFComposeBarView.h */,
-				30FEC002194C30430023985E /* PHFComposeBarView.m */,
-				30FEBFDA194C30270023985E /* Supporting Files */,
+				3082F21B1975EAB400F60DC7 /* PHFComposeBarView_Button.h */,
+				3082F21C1975EAB400F60DC7 /* PHFComposeBarView_Button.m */,
+				3082F21D1975EAB400F60DC7 /* PHFComposeBarView_TextView.h */,
+				3082F21E1975EAB400F60DC7 /* PHFComposeBarView_TextView.m */,
+				3082F21F1975EAB400F60DC7 /* PHFComposeBarView.h */,
+				3082F2201975EAB400F60DC7 /* PHFComposeBarView.m */,
+				3082F1F81975EAA800F60DC7 /* Supporting Files */,
 			);
 			path = PHFComposeBarView;
 			sourceTree = "<group>";
 		};
-		30FEBFDA194C30270023985E /* Supporting Files */ = {
+		3082F1F81975EAA800F60DC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				30FEBFDB194C30270023985E /* PHFComposeBarView-Prefix.pch */,
+				3082F1F91975EAA800F60DC7 /* PHFComposeBarView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3082F20B1975EAA800F60DC7 /* PHFComposeBarViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				3082F2111975EAA800F60DC7 /* PHFComposeBarViewTests.m */,
+				3082F20C1975EAA800F60DC7 /* Supporting Files */,
+			);
+			path = PHFComposeBarViewTests;
+			sourceTree = "<group>";
+		};
+		3082F20C1975EAA800F60DC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3082F20D1975EAA800F60DC7 /* PHFComposeBarViewTests-Info.plist */,
+				3082F20E1975EAA800F60DC7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -125,15 +174,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30FEBFD3194C30270023985E /* PHFComposeBarView */ = {
+		3082F1F11975EAA800F60DC7 /* PHFComposeBarView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30FEBFF7194C30270023985E /* Build configuration list for PBXNativeTarget "PHFComposeBarView" */;
+			buildConfigurationList = 3082F2151975EAA800F60DC7 /* Build configuration list for PBXNativeTarget "PHFComposeBarView" */;
 			buildPhases = (
-				14C78EF771334BD1A19F8B3A /* Check Pods Manifest.lock */,
-				30FEBFD0194C30270023985E /* Sources */,
-				30FEBFD1194C30270023985E /* Frameworks */,
-				30FEBFD2194C30270023985E /* CopyFiles */,
-				BAF6F8A9F35546D9A387AD92 /* Copy Pods Resources */,
+				40BACD7ECA4B4D9282439CBD /* Check Pods Manifest.lock */,
+				3082F1EE1975EAA800F60DC7 /* Sources */,
+				3082F1EF1975EAA800F60DC7 /* Frameworks */,
+				3082F1F01975EAA800F60DC7 /* CopyFiles */,
+				0603E031623B4925A7278321 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,67 +190,68 @@
 			);
 			name = PHFComposeBarView;
 			productName = PHFComposeBarView;
-			productReference = 30FEBFD4194C30270023985E /* libPHFComposeBarView.a */;
+			productReference = 3082F1F21975EAA800F60DC7 /* libPHFComposeBarView.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		3082F2011975EAA800F60DC7 /* PHFComposeBarViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3082F2181975EAA800F60DC7 /* Build configuration list for PBXNativeTarget "PHFComposeBarViewTests" */;
+			buildPhases = (
+				3082F1FE1975EAA800F60DC7 /* Sources */,
+				3082F1FF1975EAA800F60DC7 /* Frameworks */,
+				3082F2001975EAA800F60DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3082F2091975EAA800F60DC7 /* PBXTargetDependency */,
+			);
+			name = PHFComposeBarViewTests;
+			productName = PHFComposeBarViewTests;
+			productReference = 3082F2021975EAA800F60DC7 /* PHFComposeBarViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		30FEBFCC194C30270023985E /* Project object */ = {
+		3082F1EA1975EAA800F60DC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Sellegit;
 			};
-			buildConfigurationList = 30FEBFCF194C30270023985E /* Build configuration list for PBXProject "PHFComposeBarView" */;
+			buildConfigurationList = 3082F1ED1975EAA800F60DC7 /* Build configuration list for PBXProject "PHFComposeBarView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 30FEBFCB194C30270023985E;
-			productRefGroup = 30FEBFD5194C30270023985E /* Products */;
+			mainGroup = 3082F1E91975EAA800F60DC7;
+			productRefGroup = 3082F1F31975EAA800F60DC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30FEBFD3194C30270023985E /* PHFComposeBarView */,
-				30A00785194C331A001C31C2 /* UniversalLib */,
+				3082F1F11975EAA800F60DC7 /* PHFComposeBarView */,
+				3082F2011975EAA800F60DC7 /* PHFComposeBarViewTests */,
+				30070A4C1975EDBB0076C799 /* UniversalLib */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3082F2001975EAA800F60DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3082F2101975EAA800F60DC7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		14C78EF771334BD1A19F8B3A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		30A00789194C3320001C31C2 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target PHFComposeBarView ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target PHFComposeBarView -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
-		};
-		BAF6F8A9F35546D9A387AD92 /* Copy Pods Resources */ = {
+		0603E031623B4925A7278321 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,37 +266,92 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-PHFComposeBarView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		30070A501975EDC80076C799 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\n#xcodebuild -target PHFComposeBarView ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n#xcodebuild -target PHFComposeBarView -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+		40BACD7ECA4B4D9282439CBD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		30FEBFD0194C30270023985E /* Sources */ = {
+		3082F1EE1975EAA800F60DC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30FEC004194C30430023985E /* PHFComposeBarView_TextView.m in Sources */,
-				30FEC003194C30430023985E /* PHFComposeBarView_Button.m in Sources */,
-				30FEC005194C30430023985E /* PHFComposeBarView.m in Sources */,
+				3082F2221975EAB400F60DC7 /* PHFComposeBarView_TextView.m in Sources */,
+				3082F2211975EAB400F60DC7 /* PHFComposeBarView_Button.m in Sources */,
+				3082F2231975EAB400F60DC7 /* PHFComposeBarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3082F1FE1975EAA800F60DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3082F2121975EAA800F60DC7 /* PHFComposeBarViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3082F2091975EAA800F60DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3082F1F11975EAA800F60DC7 /* PHFComposeBarView */;
+			targetProxy = 3082F2081975EAA800F60DC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3082F20E1975EAA800F60DC7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3082F20F1975EAA800F60DC7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		30A00786194C331A001C31C2 /* Debug */ = {
+		30070A4D1975EDBB0076C799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		30A00787194C331A001C31C2 /* Release */ = {
+		30070A4E1975EDBB0076C799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		30FEBFF5194C30270023985E /* Debug */ = {
+		3082F2131975EAA800F60DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,7 +388,7 @@
 			};
 			name = Debug;
 		};
-		30FEBFF6194C30270023985E /* Release */ = {
+		3082F2141975EAA800F60DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,71 +419,107 @@
 			};
 			name = Release;
 		};
-		30FEBFF8194C30270023985E /* Debug */ = {
+		3082F2161975EAA800F60DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E286C2F9374740CD9A05486E /* Pods-PHFComposeBarView.xcconfig */;
+			baseConfigurationReference = 34646939C9C74B7E86F691E7 /* Pods-PHFComposeBarView.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/PHFComposeBarView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PHFComposeBarView/PHFComposeBarView-Prefix.pch";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		30FEBFF9194C30270023985E /* Release */ = {
+		3082F2171975EAA800F60DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E286C2F9374740CD9A05486E /* Pods-PHFComposeBarView.xcconfig */;
+			baseConfigurationReference = 34646939C9C74B7E86F691E7 /* Pods-PHFComposeBarView.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/PHFComposeBarView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PHFComposeBarView/PHFComposeBarView-Prefix.pch";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
+		3082F2191975EAA800F60DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHFComposeBarView/PHFComposeBarView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PHFComposeBarViewTests/PHFComposeBarViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3082F21A1975EAA800F60DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHFComposeBarView/PHFComposeBarView-Prefix.pch";
+				INFOPLIST_FILE = "PHFComposeBarViewTests/PHFComposeBarViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30A00788194C331A001C31C2 /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+		30070A4F1975EDBB0076C799 /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30A00786194C331A001C31C2 /* Debug */,
-				30A00787194C331A001C31C2 /* Release */,
+				30070A4D1975EDBB0076C799 /* Debug */,
+				30070A4E1975EDBB0076C799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3082F1ED1975EAA800F60DC7 /* Build configuration list for PBXProject "PHFComposeBarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3082F2131975EAA800F60DC7 /* Debug */,
+				3082F2141975EAA800F60DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30FEBFCF194C30270023985E /* Build configuration list for PBXProject "PHFComposeBarView" */ = {
+		3082F2151975EAA800F60DC7 /* Build configuration list for PBXNativeTarget "PHFComposeBarView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30FEBFF5194C30270023985E /* Debug */,
-				30FEBFF6194C30270023985E /* Release */,
+				3082F2161975EAA800F60DC7 /* Debug */,
+				3082F2171975EAA800F60DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30FEBFF7194C30270023985E /* Build configuration list for PBXNativeTarget "PHFComposeBarView" */ = {
+		3082F2181975EAA800F60DC7 /* Build configuration list for PBXNativeTarget "PHFComposeBarViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30FEBFF8194C30270023985E /* Debug */,
-				30FEBFF9194C30270023985E /* Release */,
+				3082F2191975EAA800F60DC7 /* Debug */,
+				3082F21A1975EAA800F60DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 30FEBFCC194C30270023985E /* Project object */;
+	rootObject = 3082F1EA1975EAA800F60DC7 /* Project object */;
 }
