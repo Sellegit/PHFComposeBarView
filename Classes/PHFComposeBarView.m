@@ -29,7 +29,7 @@ CGFloat const kTextViewTopMargin          = -5.0f;
 CGFloat const kPlaceholderHeight          = 25.0f;
 CGFloat const kPlaceholderSideMargin      =  8.0f;
 CGFloat const kPlaceholderTopMargin       =  2.0f;
-CGFloat const kButtonHeight               = 30.0f;
+CGFloat const kButtonHeight               = 31.0f;
 CGFloat const kButtonTouchableOverlap     = 8.0f;
 CGFloat const kButtonWidth                = 60.0f;
 CGFloat const kButtonRightMargin          = 0.0f;
@@ -122,7 +122,7 @@ static CGFloat kTextViewToSuperviewHeightDelta;
     backgroundViewFrame.origin.y = 0.5f;
     [[self backgroundView] setFrame:backgroundViewFrame];
 
-    [self updateCharCountLabel];
+    //[self updateCharCountLabel];
     [self resizeTextViewIfNeededAnimated:NO];
 }
 
@@ -320,7 +320,7 @@ static CGFloat kTextViewToSuperviewHeightDelta;
                                   [self bounds].size.width - 8.0f,
                                   20.0f);
         _charCountLabel = [[UILabel alloc] initWithFrame:frame];
-        [_charCountLabel setHidden:![self maxCharCount]];
+        [_charCountLabel setHidden:YES];//![self maxCharCount]];
         [_charCountLabel setTextAlignment:NSTextAlignmentRight];
         [_charCountLabel setFont:[UIFont systemFontOfSize:kCharCountFontSize]];
         UIColor *color = [UIColor colorWithHue:240.0f/360.0f saturation:0.02f brightness:0.8f alpha:1.0f];
@@ -649,7 +649,7 @@ static CGFloat kTextViewToSuperviewHeightDelta;
 }
 
 - (void)updateCharCountLabel {
-    BOOL isHidden = (_maxCharCount == 0) || [self textHeight] == kTextViewFirstLineHeight;
+    BOOL isHidden = YES;//(_maxCharCount == 0) || [self textHeight] == kTextViewFirstLineHeight;
     [[self charCountLabel] setHidden:isHidden];
 
     if (!isHidden) {
